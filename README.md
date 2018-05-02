@@ -35,15 +35,15 @@ But, the rules that govern Medicare drug plans could change soon. CMS recently p
 
 For this story, I created an original dataset in order to answer a central question: how do patients who don’t change Medicare drug plans fare over time?
 
-Current formulary information is available online through the CMS Plan Finder, and insurance companies post up-to-date formulary information on their websites. But, historic formulary data is much harder to find. (CMS charges $250 for just one month of data.) Since I wanted to track formulary changes over time, I had to get creative.
+Current formulary information is available online through the [CMS Plan Finder](https://www.medicare.gov/find-a-plan/questions/home.aspx?AspxAutoDetectCookieSupport=1), and insurance companies post up-to-date formulary information on their websites. But, historic formulary data is much harder to find. (CMS charges $250 for just one month of data.) Since I wanted to track formulary changes over time, I had to get creative.
 
 I found a website called [Q1Medicare](https://q1medicare.com/PartD-BrowseMedicare-2018PlanFormulary.php), which is operated by Q1Group, LLC and advertises itself as an educational tool.(I corresponded with several of their staff members, and they said that they get all of their data from Medicare.) The website allowed me to look up Medicare Part D formulary data by state and by plan, and I was able to manipulate the URL to get data for past years, as far back as 2013.
 
-I decided to look at formulary data for one of California’s top enrolled Medicare plans — Humana. Using county-level enrollment data from CMS for January, 2018, I used used a pivot table to figure out which companies have the highest number of enrollees in California, and then calculated the cumulative percent using the formula **=SUM($B$2:B2)/2268036*100 **in Excel:
+I decided to look at formulary data for one of California’s top enrolled Medicare plans — Humana. Using county-level [enrollment data](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/MCRAdvPartDEnrolData/Monthly-PDP-Enrollment-by-State-County-Contract.html?DLSort=1&DLEntries=10&DLPage=1&DLSortDir=descending) from CMS for January, 2018, I used used a pivot table to figure out which companies have the highest number of enrollees in California, and then calculated the cumulative percent using the formula **=SUM($B$2:B2)/2268036*100 **in Excel:
 
 ![](https://s14.postimg.cc/b23701x7l/Screen_Shot_2018-05-01_at_8.19.25_PM.png)
 
-I found that, together, SilverScript and Humana cover almost 50 percent of Medicare patients in California. Q1Medicare had more complete data for Humana (it was missing SilverScript data for 2014 and 2015), so I decided to start with Humana’s cheapest plan —Humana Preferred Rx Plan (S5884-114-0). I also picked Humana because, in 2015, CMS imposed a civil money penalty of  $3 million against Humana for violating Medicare Part D formulary requirements, among other things. The letter from CMS to Humana’s CEO, Bruce Broussard, accused Humana of policies that “resulted in Humana’s enrollees experiencing inappropriate denials of coverage at the point of sale.”
+I found that, together, SilverScript and Humana cover almost 50 percent of Medicare patients in California. Q1Medicare had more complete data for Humana (it was missing SilverScript data for 2014 and 2015), so I decided to start with Humana’s cheapest plan —Humana Preferred Rx Plan (S5884-114-0). I also picked Humana because, in 2015, CMS imposed a civil money penalty of  $3 million against Humana for violating Medicare Part D formulary requirements, among other things. The [letter](https://www.cms.gov/Medicare/Compliance-and-Audits/Part-C-and-Part-D-Compliance-and-Audits/Downloads/Humana_CMP_12_29_2015.pdf) from CMS to Humana’s CEO, Bruce Broussard, accused Humana of policies that “resulted in Humana’s enrollees experiencing inappropriate denials of coverage at the point of sale.”
 
 Next, I needed to get the data from Q1Medicare's website into a usable format. This is how it appears on their website:
 
@@ -268,7 +268,7 @@ Here's the result:
 
 As you can see, my imaginary patient wouldn't have had much trouble with her cholesterol and blood pressure medications, Atorvastatin and Losartan. Both stayed pretty consistent over the five year period.
 
-But it's a different story when it comes to her diabetes medications. Humalog dropped off Humana's formulary in 2016 and Humulin moved up two tiers, making it more expensive. So, if my impaginary Medicare patient wanted to stay with Humana from 2013 to 2018, she would have had to switch insulin types, and quite possibly delivery methods (not all insulins are compatable with syringe delivery).
+But it's a different story when it comes to her diabetes medications. Humalog dropped off Humana's formulary in 2016 and Humulin moved up two tiers, making it more expensive. So, if my impaginary Medicare patient wanted to stay with Humana from 2013 to 2018, she would have had to switch insulin types, and quite possibly insulin delivery methods (not all insulins are compatable with every delivery system).
 
 -----------
 ###**Next steps**
