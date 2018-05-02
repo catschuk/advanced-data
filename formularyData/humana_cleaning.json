@@ -1,0 +1,1665 @@
+[
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column tier_num using expression value.toNumber()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "tier_num",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column year using expression value.toDate()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "year",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "montelukast sod 5 mg tab chew [Singulair]",
+          "MONTELUKAST SOD 5 MG TAB CHEW [Singulair]",
+          "Montelukast sod 5 mg tab chew [Singulair]"
+        ],
+        "to": "MONTELUKAST SOD 5 MG TAB CHEW [Singulair]"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "VANCOMYCIN HYDROCHLORIDE 100MG/ML 1 VIAL, PHARMACY BULK PACKAGE in 1 CASE / 95 mL in 1 VIAL, PHARMA",
+          "Vancomycin Hydrochloride 100mg/mL 1 VIAL, PHARMACY BULK PACKAGE in 1 CASE / 95 mL in 1 VIAL, PHARMA",
+          "VANCOMYCIN HYDROCHLORIDE 100mg/mL 1 VIAL, PHARMACY BULK PACKAGE in 1 CASE / 95 mL in 1 VIAL, PHARMA"
+        ],
+        "to": "VANCOMYCIN HYDROCHLORIDE 100MG/ML 1 VIAL, PHARMACY BULK PACKAGE in 1 CASE / 95 mL in 1 VIAL, PHARMA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pyridostigmine br 60 mg tablet",
+          "pyridostigmine br 60 mg tablet",
+          "PYRIDOSTIGMINE BR 60 MG TABLET"
+        ],
+        "to": "PYRIDOSTIGMINE BR 60 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "montelukast sod 4 mg tab chew [Singulair]",
+          "MONTELUKAST SOD 4 MG TAB CHEW [Singulair]",
+          "Montelukast sod 4 mg tab chew [Singulair]"
+        ],
+        "to": "MONTELUKAST SOD 4 MG TAB CHEW [Singulair]"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MICROGESTIN FE 1-20 TABLET",
+          "MICROGESTIN FE 1/20 TABLET",
+          "Microgestin fe 1-20 tablet"
+        ],
+        "to": "MICROGESTIN FE 1-20 TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "FUROSEMIDE 40 MG TABLET",
+          "Furosemide 40 mg tablet"
+        ],
+        "to": "FUROSEMIDE 40 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LOW-OGESTREL-28 TABLET",
+          "Low-ogestrel-28 tablet"
+        ],
+        "to": "LOW-OGESTREL-28 TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PAROXETINE HCL 30 MG TABLET",
+          "Paroxetine hcl 30 mg tablet"
+        ],
+        "to": "PAROXETINE HCL 30 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ROPINIROLE HCL TABLET 1 MG",
+          "ROPINIROLE HCL 1 MG TABLET"
+        ],
+        "to": "ROPINIROLE HCL 1 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ENOXAPARIN 300 MG/3 ML VIAL",
+          "ENOXAPARIN 300 MG/3 ML vial"
+        ],
+        "to": "ENOXAPARIN 300 MG/3 ML VIAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Modafinil 100 mg tablet [Provigil]",
+          "MODAFINIL 100 MG TABLET [Provigil]"
+        ],
+        "to": "MODAFINIL 100 MG TABLET [Provigil]"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "riluzole 50 mg tablet [Rilutek]",
+          "RILUZOLE 50 MG TABLET [Rilutek]"
+        ],
+        "to": "RILUZOLE 50 MG TABLET [Rilutek]"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hydroxyurea 500 mg capsule",
+          "HYDROXYUREA 500 MG CAPSULE"
+        ],
+        "to": "HYDROXYUREA 500 MG CAPSULE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Potassium cl 20% (40 meq/15 ml)",
+          "Potassium Cl 20% (40 MEQ/15 ML)"
+        ],
+        "to": "Potassium Cl 20% (40 MEQ/15 ML)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "tinidazole 500 mg tablet",
+          "TINIDAZOLE 500 MG TABLET"
+        ],
+        "to": "TINIDAZOLE 500 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Morphine 2 mg/ml isecure syr",
+          "MORPHINE 2 MG/ML ISECURE SYR"
+        ],
+        "to": "MORPHINE 2 MG/ML ISECURE SYR"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BENZTROPINE MES 2 MG TABLET",
+          "Benztropine mes 2 mg tablet"
+        ],
+        "to": "BENZTROPINE MES 2 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Vestura 3 mg-0.02 mg tablet",
+          "VESTURA 3 MG-0.02 MG TABLET"
+        ],
+        "to": "VESTURA 3 MG-0.02 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "fluvoxamine er 150 mg capsule",
+          "FLUVOXAMINE ER 150 MG CAPSULE"
+        ],
+        "to": "FLUVOXAMINE ER 150 MG CAPSULE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Acyclovir 5% Ointment",
+          "acyclovir 5% ointment"
+        ],
+        "to": "ACYCLOVIR 5% OINTMENT"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Terbinafine HCl 250 MG Tablet",
+          "TERBINAFINE HCL 250 MG TABLET"
+        ],
+        "to": "TERBINAFINE HCL 250 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "FINASTERIDE 5 MG TABLET",
+          "Finasteride 5 mg tablet"
+        ],
+        "to": "FINASTERIDE 5 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LARIN 21 1-20 tablet",
+          "LARIN 21 1-20 TABLET"
+        ],
+        "to": "LARIN 21 1-20 TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ROPINIROLE HCL TABLET 3 MG",
+          "ROPINIROLE HCL 3 MG TABLET"
+        ],
+        "to": "ROPINIROLE HCL TABLET 3 MG"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LISINOPRIL 20 MG TABLET",
+          "Lisinopril 20 mg tablet"
+        ],
+        "to": "LISINOPRIL 20 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "RISPERIDONE 2 MG TABLET",
+          "RISPERIDONE TABLET 2 MG"
+        ],
+        "to": "RISPERIDONE 2 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "METHYLPHENIDATE ER 40 MG CAP",
+          "Methylphenidate er 40 mg cap"
+        ],
+        "to": "METHYLPHENIDATE ER 40 MG CAP"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NIMODIPINE 30 MG CAPSULE",
+          "nimodipine 30 mg capsule"
+        ],
+        "to": "NIMODIPINE 30 MG CAPSULE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "URSODIOL 300 MG CAPSULE",
+          "Ursodiol 300 MG CAPSULE"
+        ],
+        "to": "URSODIOL 300 MG CAPSULE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "oxazepam 30 mg capsule",
+          "OXAZEPAM 30 MG CAPSULE"
+        ],
+        "to": "OXAZEPAM 30 MG CAPSULE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Nikki 3 mg-0.02 mg tablet",
+          "NIKKI 3 MG-0.02 MG TABLET"
+        ],
+        "to": "NIKKI 3 MG-0.02 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "pioglitazone hcl 15 mg tablet [Actos]",
+          "PIOGLITAZONE HCL 15 MG TABLET [Actos]"
+        ],
+        "to": "PIOGLITAZONE HCL 15 MG TABLET [Actos]"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Potassium Cl 10% (20 MEQ/15 ML)",
+          "Potassium cl 10% (20 meq/15 ml)"
+        ],
+        "to": "POTASSIUM Cl 10% (20 MEQ/15 ML)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BICALUTAMIDE 50 MG TABLET",
+          "Bicalutamide 50 mg tablet"
+        ],
+        "to": "BICALUTAMIDE 50 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AMPICILLIN-SULBACTAM 3 GM VIAL",
+          "ampicillin-sulbactam 3 gm vial"
+        ],
+        "to": "AMPICILLIN-SULBACTAM 3 GM VIAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PRAVASTATIN SODIUM 80 MG TAB",
+          "Pravastatin Sodium 80 mg tab"
+        ],
+        "to": "PRAVASTATIN SODIUM 80 MG TAB"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Erythromycin 2% solution",
+          "ERYTHROMYCIN 2% SOLUTION"
+        ],
+        "to": "ERYTHROMYCIN 2% SOLUTION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Klor-Con M20 Tablet",
+          "KLOR-CON M20 tablet"
+        ],
+        "to": "KLOR-CON M20 tablet"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Testosterone cyp 200 mg/ml",
+          "TESTOSTERONE CYP 200 MG/ML"
+        ],
+        "to": "TESTOSTERONE CYP 200 MG/ML"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OCTREOTIDE 1,000 MCG/ML VIAL",
+          "OCTREOTIDE 1,000 mcg/ml vial"
+        ],
+        "to": "OCTREOTIDE 1,000 MCG/ML VIAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "XARELTO 10mg/1 10 BLISTER PACK per CARTON / 10 TABLET per BLISTER PACK",
+          "Xarelto 10mg/1 10 BLISTER PACK per CARTON / 10 TABLET per BLISTER PACK"
+        ],
+        "to": "XARELTO 10mg/1 10 BLISTER PACK per CARTON / 10 TABLET per BLISTER PACK"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SERTRALINE HCL 50 MG TABLET",
+          "Sertraline hcl 50 mg tablet"
+        ],
+        "to": "SERTRALINE HCL 50 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "rizatriptan 5 mg odt",
+          "Rizatriptan 5 mg odt"
+        ],
+        "to": "RIZATRIPTAN 5 MG ODT"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NEVIRAPINE ER 400 MG TABLET",
+          "nevirapine er 400 mg tablet"
+        ],
+        "to": "NEVIRAPINE ER 400 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Digitek 250 mcg tablet",
+          "DIGITEK 250 MCG TABLET"
+        ],
+        "to": "DIGITEK 250 MCG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "IRBESARTAN-HCTZ 150-12.5 MG TB",
+          "Irbesartan-Hctz 150-12.5 mg tb"
+        ],
+        "to": "IRBESARTAN-HCTZ 150-12.5 MG TB"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NABUMETONE 500 MG TABLET",
+          "Nabumetone 500 mg tablet"
+        ],
+        "to": "NABUMETONE 500 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ipratropium Bromide 0.5mg/2.5mL 1 POUCH per CARTON / 30 VIAL in 1 POUCH / 2.5 mL in 1 VIAL",
+          "IPRATROPIUM BROMIDE 0.5mg/2.5mL 1 POUCH per CARTON / 30 VIAL in 1 POUCH / 2.5 mL in 1 VIAL"
+        ],
+        "to": "IPRATROPIUM BROMIDE 0.5mg/2.5mL 1 POUCH per CARTON / 30 VIAL in 1 POUCH / 2.5 mL in 1 VIAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "INDOMETHACIN 25 MG CAPSULE",
+          "Indomethacin 25 mg capsule"
+        ],
+        "to": "INDOMETHACIN 25 MG CAPSULE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MIRTAZAPINE 15 MG ODT",
+          "Mirtazapine 15 mg odt"
+        ],
+        "to": "MIRTAZAPINE 15 MG ODT"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "pioglitazone hcl 45 mg tablet [Actos]",
+          "PIOGLITAZONE HCL 45 MG TABLET [Actos]"
+        ],
+        "to": "PIOGLITAZONE HCL 45 MG TABLET [Actos]"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mesna 100 mg/ml vial",
+          "MESNA 100 MG/ML VIAL"
+        ],
+        "to": "MESNA 100 MG/ML VIAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OFLOXACIN 300 MG TABLET",
+          "Ofloxacin 300 mg tablet"
+        ],
+        "to": "OFLOXACIN 300 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ESZOPICLONE 3 MG TABLET [Lunesta]",
+          "Eszopiclone 3 mg tablet [Lunesta]"
+        ],
+        "to": "ESZOPICLONE 3 MG TABLET [Lunesta]"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BETHANECHOL 50 MG TABLET",
+          "Bethanechol 50 mg tablet"
+        ],
+        "to": "BETHANECHOL 50 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "METFORMIN HCL 500 MG TABLET",
+          "Metformin hcl 500 mg tablet"
+        ],
+        "to": "METFORMIN HCL 500 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Rifampin IV 600 MG Vial",
+          "RIFAMPIN IV 600 MG VIAL"
+        ],
+        "to": "RIFAMPIN IV 600 MG VIAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Omeprazole 20mg DELAYED RELEASE 100 CAPSULE BOTTLE",
+          "OMEPRAZOLE 20mg DELAYED RELEASE 100 CAPSULE BOTTLE"
+        ],
+        "to": "OMEPRAZOLE 20mg DELAYED RELEASE 100 CAPSULE BOTTLE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LEVOTHYROXINE 100 MCG TABLET",
+          "Levothyroxine 100 mcg tablet"
+        ],
+        "to": "LEVOTHYROXINE 100 MCG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PREDNISONE 10 MG TAB DOSE PACK",
+          "Prednisone 10 mg tab dose pack"
+        ],
+        "to": "PREDNISONE 10 MG TAB DOSE PACK"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ipratropium Bromide 42ug/1 1 BOTTLE, SPRAY per CARTON / 165 SPRAY, METERED in 1 BOTTLE, SPRAY",
+          "IPRATROPIUM BROMIDE 42ug/1 1 BOTTLE, SPRAY per CARTON / 165 SPRAY, METERED in 1 BOTTLE, SPRAY"
+        ],
+        "to": "IPRATROPIUM BROMIDE 42ug/1 1 BOTTLE, SPRAY per CARTON / 165 SPRAY, METERED in 1 BOTTLE, SPRAY"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Atropine 1% Eye Drops",
+          "ATROPINE 1% EYE DROPS"
+        ],
+        "to": "ATROPINE 1% EYE DROPS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "methylprednisolone 125 mg vial",
+          "Methylprednisolone 125 mg vial"
+        ],
+        "to": "METHYLPREDNISOLONE 125 MG VIAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "IBUPROFEN 800 MG TABLET",
+          "Ibuprofen 800 mg tablet"
+        ],
+        "to": "IBUPROFEN 800 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MICROGESTIN 21 1-20 TABLET",
+          "Microgestin 21 1-20 tablet"
+        ],
+        "to": "MICROGESTIN 21 1-20 TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ESZOPICLONE 2 MG TABLET [Lunesta]",
+          "Eszopiclone 2 mg tablet [Lunesta]"
+        ],
+        "to": "ESZOPICLONE 2 MG TABLET [Lunesta]"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Moexipril hcl 15 mg tablet",
+          "MOEXIPRIL HCL 15 MG TABLET"
+        ],
+        "to": "MOEXIPRIL HCL 15 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BETAMETHASONE VALERATE 0.1% LOTION",
+          "BETAMETHASONE VALERATE 0.1% lotion"
+        ],
+        "to": "BETAMETHASONE VALERATE 0.1% LOTION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NABUMETONE 750 MG TABLET",
+          "Nabumetone 750 mg tablet"
+        ],
+        "to": "NABUMETONE 750 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Norethindrone 0.35 mg tablet",
+          "NORETHINDRONE 0.35 MG TABLET"
+        ],
+        "to": "NORETHINDRONE 0.35 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LEVETIRACETAM ER 500 MG TABLET",
+          "Levetiracetam er 500 mg tablet"
+        ],
+        "to": "LEVETIRACETAM ER 500 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AMMONIUM LACTATE 12% CREAM",
+          "ammonium lactate 12% cream"
+        ],
+        "to": "AMMONIUM LACTATE 12% CREAM"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Morphine 4 mg/ml isecure syr",
+          "MORPHINE 4 MG/ML ISECURE SYR"
+        ],
+        "to": "MORPHINE 4 MG/ML ISECURE SYR"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AZITHROMYCIN I.V. 500 MG VIAL",
+          "Azithromycin i.v. 500 mg vial"
+        ],
+        "to": "AZITHROMYCIN I.V. 500 MG VIAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "THEOPHYLLINE ER 600 MG TABLET",
+          "Theophylline er 600 mg tablet"
+        ],
+        "to": "THEOPHYLLINE ER 600 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CAMRESE LO TABLET",
+          "Camrese Lo tablet"
+        ],
+        "to": "CAMRESE LO TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LEFLUNOMIDE 20 MG TABLET",
+          "Leflunomide 20 mg tablet"
+        ],
+        "to": "LEFLUNOMIDE 20 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NAPROXEN 375 MG TABLET",
+          "Naproxen 375 mg tablet"
+        ],
+        "to": "NAPROXEN 375 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Klor-Con 10 MEQ Tablet",
+          "KLOR-CON 10 MEQ TABLET"
+        ],
+        "to": "KLOR-CON 10 MEQ TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Morphine Sulfate 100mg/5mL 15 mL in 1 BOTTLE",
+          "MORPHINE SULFATE 100mg/5mL 15 mL in 1 BOTTLE"
+        ],
+        "to": "MORPHINE SULFATE 100mg/5mL 15 mL in 1 BOTTLE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Acyclovir 400mg/1",
+          "acyclovir 400mg/1"
+        ],
+        "to": "ACYCLOVIR 400mg/1"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "cefprozil 125 mg/5 ml susp",
+          "CEFPROZIL 125 MG/5 ML SUSP"
+        ],
+        "to": "CEFPROZIL 125 MG/5 ML SUSP"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NORETHIND-ETH ESTRAD 1-0.02 MG",
+          "norethind-eth estrad 1-0.02 mg"
+        ],
+        "to": "NORETHIND-ETH ESTRAD 1-0.02 MG"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cefaclor 375 mg/5 ml suspen",
+          "CEFACLOR 375 MG/5 ML SUSPEN"
+        ],
+        "to": "CEFACLOR 375 MG/5 ML SUSPEN"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "QUINIDINE SULFATE 200 MG TAB",
+          "Quinidine Sulfate 200 mg tab"
+        ],
+        "to": "QUINIDINE SULFATE 200 MG TAB"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Betaxolol hcl 0.5% eye drop",
+          "betaxolol hcl 0.5% eye drop"
+        ],
+        "to": "BETAXOLOL HCL 0.5% EYE DROP"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ENTACAPONE 200 MG TABLET [Comtan Entacapone]",
+          "entacapone 200 mg tablet [Comtan]"
+        ],
+        "to": "ENTACAPONE 200 MG TABLET [Comtan]"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "METHYLPHENIDATE ER 20 MG CAP",
+          "Methylphenidate er 20 mg cap"
+        ],
+        "to": "METHYLPHENIDATE ER 20 MG CAP"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "oxazepam 10 mg capsule",
+          "OXAZEPAM 10 MG CAPSULE"
+        ],
+        "to": "OXAZEPAM 10 MG CAPSULE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Doxycycline Hyclate 100mg/1 50 BOTTLE, PLASTIC in 1 BOTTLE, PLASTIC / 50 CAPSULE BOTTLE, PLAST",
+          "Doxycycline Hyclate 100mg/1 50 BOTTLE, PLASTIC in 1 BOTTLE, PLASTIC / 50 CAPSULE in 1 BOTTLE, PLAST"
+        ],
+        "to": "DOXYCYCLINE HYCLATE 100mg/1 50 BOTTLE, PLASTIC in 1 BOTTLE, PLASTIC / 50 CAPSULE BOTTLE, PLAST"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "fluvoxamine er 100 mg capsule",
+          "FLUVOXAMINE ER 100 MG CAPSULE"
+        ],
+        "to": "FLUVOXAMINE ER 100 MG CAPSULE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DOXY 100 VIAL",
+          "Doxy 100 vial"
+        ],
+        "to": "DOXY 100 VIAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HALOG OINTMENT 1mg/g 60 g in 1 TUBE [HALOG]",
+          "HALOG OINTMENT 1mg/g 60 g in 1 TUBE"
+        ],
+        "to": "HALOG OINTMENT 1mg/g 60 g in 1 TUBE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "TRIHEXYPHENIDYL 5 MG TABLET",
+          "Trihexyphenidyl 5 mg tablet"
+        ],
+        "to": "TRIHEXYPHENIDYL 5 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Granisetron HCl 0.1 mg/ml vial",
+          "GRANISETRON HCL 0.1 MG/ML VIAL"
+        ],
+        "to": "GRANISETRON HCL 0.1 MG/ML VIAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BUTALBITAL/ACETAMINOPHEN/CAFFEINE CP",
+          "BUTALBITAL/ACETAMINOPHEN/CAFFEINE cp"
+        ],
+        "to": "BUTALBITAL/ACETAMINOPHEN/CAFFEINE CP"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ondansetron 2mg/mL 25 VIAL in 1 CARTON / 2 mL in 1 VIAL",
+          "ONDANSETRON 2mg/mL 25 VIAL in 1 CARTON / 2 mL in 1 VIAL"
+        ],
+        "to": "ONDANSETRON 2mg/mL 25 VIAL in 1 CARTON / 2 mL in 1 VIAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Diltiazem hcl er 420 mg cap",
+          "diltiazem hcl er 420 mg cap"
+        ],
+        "to": "DILTIAZEM HCL ER 420 MG CAP"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BUSPIRONE HCL 5 MG TABLET",
+          "Buspirone hcl 5 mg tablet"
+        ],
+        "to": "BUSPIRONE HCL 5 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SEROMYCIN 250mg/250mg 40 CAPSULE BOTTLE / 250 mg in 1 CAPSULE",
+          "SEROMYCIN 250mg/250mg 40 CAPSULE in 1 BOTTLE / 250 mg in 1 CAPSULE"
+        ],
+        "to": "SEROMYCIN 250mg/250mg 40 CAPSULE BOTTLE / 250 mg in 1 CAPSULE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DESMOPRESSIN ACETATE 0.2 MG TB",
+          "Desmopressin acetate 0.2 mg tb"
+        ],
+        "to": "DESMOPRESSIN ACETATE 0.2 MG TB"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HYDROXYZINE HCL 50 MG TABLET",
+          "Hydroxyzine hcl 50 mg tablet"
+        ],
+        "to": "HYDROXYZINE HCL 50 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "tinidazole 250 mg tablet",
+          "TINIDAZOLE 250 MG TABLET"
+        ],
+        "to": "TINIDAZOLE 250 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "TAMIFLU 30mg/1 1 BLISTER PACK per CARTON / 10 CAPSULE per BLISTER PACK",
+          "Tamiflu 30mg/1 1 BLISTER PACK per CARTON / 10 CAPSULE per BLISTER PACK"
+        ],
+        "to": "TAMIFLU 30mg/1 1 BLISTER PACK per CARTON / 10 CAPSULE per BLISTER PACK"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Risperidone 1mg/mL 30 mL in 1 BOTTLE",
+          "RISPERIDONE 1mg/mL 30 mL in 1 BOTTLE"
+        ],
+        "to": "RISPERIDONE 1mg/mL 30 mL in 1 BOTTLE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "rizatriptan 10 mg odt",
+          "Rizatriptan 10 mg odt"
+        ],
+        "to": "RIZATRIPTAN 10 MG ODT"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "RISPERIDONE 1 MG TABLET",
+          "RISPERIDONE TABLET 1 MG"
+        ],
+        "to": "RISPERIDONE 1 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "FLUOCINOLONE 0.01% CREAM",
+          "Fluocinolone 0.01% cream"
+        ],
+        "to": "FLUOCINOLONE 0.01% CREAM"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MELOXICAM 7.5 MG TABLET",
+          "Meloxicam 7.5 mg tablet"
+        ],
+        "to": "MELOXICAM 7.5 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NORG-EE 0.18-0.215-0.25/0.035",
+          "norg-ee 0.18-0.215-0.25/0.035"
+        ],
+        "to": "NORG-EE 0.18-0.215-0.25/0.035"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "FLUOCINOLONE 0.025% CREAM",
+          "Fluocinolone 0.025% cream"
+        ],
+        "to": "FLUOCINOLONE 0.025% CREAM"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dextrose 5%-ns iv solution",
+          "DEXTROSE 5%-NS IV SOLUTION"
+        ],
+        "to": "DEXTROSE 5%-NS IV SOLUTION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LEVOTHYROXINE 25 MCG TABLET",
+          "Levothyroxine 25 mcg tablet"
+        ],
+        "to": "LEVOTHYROXINE 25 MCG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ROPINIROLE HCL TABLET 4 MG",
+          "ROPINIROLE HCL 4 MG TABLET"
+        ],
+        "to": "ROPINIROLE HCL 4 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mycophenolic Acid DR 180 mg tb",
+          "MYCOPHENOLIC ACID DR 180 MG TB"
+        ],
+        "to": "MYCOPHENOLIC ACID DR 180 MG TB"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ticlopidine 250 mg tablet",
+          "TICLOPIDINE 250 MG TABLET"
+        ],
+        "to": "TICLOPIDINE 250 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "rizatriptan 5 mg tablet",
+          "Rizatriptan 5 mg tablet"
+        ],
+        "to": "RIZATRIPTAN 5 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PANTOPRAZOLE SODIUM 40 MG VIAL",
+          "pantoprazole sodium 40 mg vial"
+        ],
+        "to": "PANTOPRAZOLE SODIUM 40 MG VIAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WYMZYA FE CHEWABLE TABLET",
+          "Wymzya fe chewable tablet"
+        ],
+        "to": "WYMZYA FE CHEWABLE TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HYDROXYZINE PAM 25 MG CAP",
+          "Hydroxyzine pam 25 mg cap"
+        ],
+        "to": "HYDROXYZINE PAM 25 MG CAP"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "TWINJECT AUTO INJECTOR INJECTION 1% AUTO INJECTOR TWO PACK SYR",
+          "TWINJECT AUTO INJECTOR INJECTION 1% AUTO TWO PACK SYR"
+        ],
+        "to": "TWINJECT AUTO INJECTOR INJECTION 1% AUTO INJECTOR TWO PACK SYR"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BETHANECHOL 25 MG TABLET",
+          "Bethanechol 25 mg tablet"
+        ],
+        "to": "BETHANECHOL 25 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ALENDRONATE SODIUM 70 MG TAB",
+          "Alendronate Sodium 70 mg tab"
+        ],
+        "to": "ALENDRONATE SODIUM 70 MG TAB"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BETHANECHOL 5 MG TABLET",
+          "Bethanechol 5 mg tablet"
+        ],
+        "to": "BETHANECHOL 5 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Repaglinide 1 MG Tablet [Prandin]",
+          "REPAGLINIDE 1 MG TABLET [Prandin]"
+        ],
+        "to": "REPAGLINIDE 1 MG TABLET [Prandin]"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "nevirapine 200 mg tablet",
+          "NEVIRAPINE 200 MG TABLET"
+        ],
+        "to": "NEVIRAPINE 200 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "TRIHEXYPHENIDYL 2 MG TABLET",
+          "Trihexyphenidyl 2 mg tablet"
+        ],
+        "to": "TRIHEXYPHENIDYL 2 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "RANITIDINE 15 MG/ML SYRUP",
+          "Ranitidine 15 mg/ml syrup"
+        ],
+        "to": "RANITIDINE 15 MG/ML SYRUP"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LINEZOLID 600 MG TABLET [Zyvox]",
+          "Linezolid 600 mg tablet [Zyvox]"
+        ],
+        "to": "LINEZOLID 600 MG TABLET [Zyvox]"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ROPINIROLE HCL TABLET 5 MG",
+          "ROPINIROLE HCL 5 MG TABLET"
+        ],
+        "to": "ROPINIROLE HCL 5 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "RISPERIDONE 1mg/1 7 BLISTER PACK per CARTON / 4 TABLET, ORALLY DISINTEGRATING per BLISTER PACK",
+          "Risperidone 1mg/1 7 BLISTER PACK per CARTON / 4 TABLET, ORALLY DISINTEGRATING per BLISTER PACK"
+        ],
+        "to": "RISPERIDONE 1mg/1 7 BLISTER PACK per CARTON / 4 TABLET, ORALLY DISINTEGRATING per BLISTER PACK"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "TOPOTECAN HCL 4 MG VIAL",
+          "Topotecan hcl 4 mg vial"
+        ],
+        "to": "TOPOTECAN HCL 4 MG VIAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "METIPRANOLOL 0.3% EYE DROPS",
+          "Metipranolol 0.3% eye drops"
+        ],
+        "to": "METIPRANOLOL 0.3% EYE DROPS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "THEOPHYLLINE ER 400 MG TABLET",
+          "Theophylline er 400 mg tablet"
+        ],
+        "to": "THEOPHYLLINE ER 400 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Doxercalciferol 4 mcg/2 ml amp  [HECTOROL]",
+          "Doxercalciferol 4 mcg/2 ml amp [HECTOROL]"
+        ],
+        "to": "DOXERCALCIFEROL 4 MCG/2 ML AMP  [HECTOROL]"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HYDROCHLOROTHIAZIDE 25 MG TAB",
+          "Hydrochlorothiazide 25 mg tab"
+        ],
+        "to": "HYDROCHLOROTHIAZIDE 25 MG TAB"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "fenofibrate 48 mg tablet",
+          "FENOFIBRATE 48 MG TABLET"
+        ],
+        "to": "FENOFIBRATE 48 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CEFAZOLIN 1 GM VIAL",
+          "Cefazolin 1 gm vial"
+        ],
+        "to": "CEFAZOLIN 1 GM VIAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mycophenolic Acid DR 360 mg tb",
+          "MYCOPHENOLIC ACID DR 360 MG TB"
+        ],
+        "to": "MYCOPHENOLIC ACID DR 360 MG TB"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "griseofulvin ultra 125 mg tab",
+          "GRISEOFULVIN ULTRA 125 MG TAB"
+        ],
+        "to": "GRISEOFULVIN ULTRA 125 MG TAB"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "POTASSIUM CL ER 20 MEQ TABLET",
+          "Potassium cl er 20 meq tablet"
+        ],
+        "to": "POTASSIUM CL ER 20 MEQ TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cladribine 10 mg/10 ml vial",
+          "cladribine 10 mg/10 ml vial"
+        ],
+        "to": "CLADRIBINE 10 MG/10 ML VIAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "rizatriptan 10 mg tablet",
+          "Rizatriptan 10 mg tablet"
+        ],
+        "to": "RIZATRIPTAN 10 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NECON 0.5/35-28 TABLET",
+          "Necon 0.5-35-28 tablet"
+        ],
+        "to": "NECON 0.5/35-28 TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HYDROXYZINE PAM 50 MG CAP",
+          "Hydroxyzine pam 50 mg cap"
+        ],
+        "to": "HYDROXYZINE PAM 50 MG CAP"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Naproxen 125 mg/5 ml suspen",
+          "NAPROXEN 125 MG/5 ML SUSPEN"
+        ],
+        "to": "NAPROXEN 125 MG/5 ML SUSPEN"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "RISPERIDONE 3 MG TABLET",
+          "RISPERIDONE TABLET 3 MG"
+        ],
+        "to": "RISPERIDONE 3 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Repaglinide 2 MG Tablet [Prandin]",
+          "REPAGLINIDE 2 MG TABLET [Prandin]"
+        ],
+        "to": "REPAGLINIDE 2 MG TABLET [Prandin]"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "METOCLOPRAMIDE 5 MG TABLET",
+          "Metoclopramide 5 mg tablet"
+        ],
+        "to": "METOCLOPRAMIDE 5 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "RISPERIDONE 4 MG TABLET",
+          "RISPERIDONE TABLET 4 MG"
+        ],
+        "to": "RISPERIDONE 4 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "cefprozil 250 mg/5 ml susp",
+          "CEFPROZIL 250 MG/5 ML SUSP"
+        ],
+        "to": "CEFPROZIL 250 MG/5 ML SUSP"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "IRBESARTAN-HCTZ 300-12.5 MG TB [Avalide]",
+          "Irbesartan-hctz 300-12.5 mg tb [Avalide]"
+        ],
+        "to": "IRBESARTAN-HCTZ 300-12.5 MG TB [Avalide]"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DESMOPRESSIN ACETATE 0.1 MG TB",
+          "Desmopressin acetate 0.1 mg tb"
+        ],
+        "to": "DESMOPRESSIN ACETATE 0.1 MG TB"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "pioglitazone hcl 30 mg tablet [Actos]",
+          "PIOGLITAZONE HCL 30 MG TABLET [Actos]"
+        ],
+        "to": "PIOGLITAZONE HCL 30 MG TABLET [Actos]"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "mupirocin 2% cream",
+          "MUPIROCIN 2% CREAM"
+        ],
+        "to": "MUPIROCIN 2% CREAM"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Klor-Con 8 MEQ Tablet",
+          "KLOR-CON 8 MEQ TABLET"
+        ],
+        "to": "KLOR-CON 8 MEQ TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ROPINIROLE HCL TABLET 2 MG",
+          "ROPINIROLE HCL 2 MG TABLET"
+        ],
+        "to": "ROPINIROLE HCL 2 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BACLOFEN 20 MG TABLET",
+          "baclofen 20 mg tablet"
+        ],
+        "to": "BACLOFEN 20 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dexrazoxane 500 MG Vial",
+          "dexrazoxane 500 mg vial"
+        ],
+        "to": "DEXRAZOXANE 500 MG VIAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Digitek 125 mcg tablet",
+          "DIGITEK 125 MCG TABLET"
+        ],
+        "to": "DIGITEK 125 MCG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BETHANECHOL 10 MG TABLET",
+          "Bethanechol 10 mg tablet"
+        ],
+        "to": "BETHANECHOL 10 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MELOXICAM 15 MG TABLET",
+          "Meloxicam 15 mg tablet"
+        ],
+        "to": "MELOXICAM 15 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Methotrexate 25 mg/ml vial",
+          "methotrexate 25 mg/ml vial"
+        ],
+        "to": "METHOTREXATE 25 MG/ML VIAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LIDOCAINE 2% VISCOUS SOLN",
+          "Lidocaine 2% viscous soln"
+        ],
+        "to": "LIDOCAINE 2% VISCOUS SOLN"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "griseofulvin ultra 250 mg tab",
+          "GRISEOFULVIN ULTRA 250 MG TAB"
+        ],
+        "to": "GRISEOFULVIN ULTRA 250 MG TAB"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "TAMIFLU 45mg/1 1 BLISTER PACK per CARTON / 10 CAPSULE per BLISTER PACK",
+          "Tamiflu 45mg/1 1 BLISTER PACK per CARTON / 10 CAPSULE per BLISTER PACK"
+        ],
+        "to": "TAMIFLU 45mg/1 1 BLISTER PACK per CARTON / 10 CAPSULE per BLISTER PACK"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PIPERACILLIN 200 MG/ML / TAZOBACTAM 25 MG/ML INJECTABLE SOLUTION",
+          "Piperacillin 200 MG/ML / tazobactam 25 MG/ML Injectable Solution"
+        ],
+        "to": "PIPERACILLIN 200 MG/ML / TAZOBACTAM 25 MG/ML INJECTABLE SOLUTION"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column name using expression value.toUppercase()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "name",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column name using expression value.trim()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "name",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column tier_num using expression value.replace(/\\s+/,' ')",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "tier_num",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column tier_desc using expression value.replace(/\\s+/,' ')",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "tier_desc",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column cost_30 using expression value.trim()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "cost_30",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column management using expression value.trim()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "management",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column management using expression value.trim()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "management",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column year using expression value.trim()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "year",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column tier_num using expression value.toNumber()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "tier_num",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  }
+]

@@ -1,0 +1,324 @@
+[
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column tier_num using expression value.toNumber()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "tier_num",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column year using expression value.toDate()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "year",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column name using expression value.toUppercase()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "name",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column name using expression value.trim()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "name",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column tier_num using expression value.replace(/\\s+/,' ')",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "tier_num",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column tier_desc using expression value.replace(/\\s+/,' ')",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "tier_desc",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column management using expression value.trim()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "management",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column management using expression value.trim()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "management",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column year using expression value.trim()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "year",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column tier_num using expression value.toNumber()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "tier_num",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ROPINIROLE HCL TABLET 1 MG",
+          "ROPINIROLE HCL 1 MG TABLET"
+        ],
+        "to": "ROPINIROLE HCL 1 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LEVOTHYROXINE SODIUM 50UG/1 100 BOTTLE, PLASTIC IN 1 BOTTLE, PLASTIC / 100 TABLET BOTTLE, PLAS",
+          "LEVOTHYROXINE SODIUM 50UG/1 100 BOTTLE, PLASTIC IN 1 BOTTLE, PLASTIC / 100 TABLET IN 1 BOTTLE, PLAS"
+        ],
+        "to": "LEVOTHYROXINE SODIUM 50UG/1 100 BOTTLE, PLASTIC IN 1 BOTTLE, PLASTIC / 100 TABLET BOTTLE, PLAS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ROPINIROLE HCL TABLET 3 MG",
+          "ROPINIROLE HCL 3 MG TABLET"
+        ],
+        "to": "ROPINIROLE HCL 3 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "RISPERIDONE 2 MG TABLET",
+          "RISPERIDONE TABLET 2 MG"
+        ],
+        "to": "RISPERIDONE 2 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LEVOTHYROXINE SODIUM 150UG/1 100 BOTTLE, PLASTIC IN 1 BOTTLE, PLASTIC / 100 TABLET BOTTLE, PLA",
+          "LEVOTHYROXINE SODIUM 150UG/1 100 BOTTLE, PLASTIC IN 1 BOTTLE, PLASTIC / 100 TABLET IN 1 BOTTLE, PLA"
+        ],
+        "to": "LEVOTHYROXINE SODIUM 150UG/1 100 BOTTLE, PLASTIC IN 1 BOTTLE, PLASTIC / 100 TABLET BOTTLE, PLA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LEVOTHYROXINE SODIUM 25UG/1 100 BOTTLE, PLASTIC IN 1 BOTTLE, PLASTIC / 100 TABLET BOTTLE, PLAS",
+          "LEVOTHYROXINE SODIUM 25UG/1 100 BOTTLE, PLASTIC IN 1 BOTTLE, PLASTIC / 100 TABLET IN 1 BOTTLE, PLAS"
+        ],
+        "to": "LEVOTHYROXINE SODIUM 25UG/1 100 BOTTLE, PLASTIC IN 1 BOTTLE, PLASTIC / 100 TABLET BOTTLE, PLAS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LEVOTHYROXINE SODIUM 100UG/1 100 BOTTLE, PLASTIC IN 1 BOTTLE, PLASTIC / 100 TABLET BOTTLE, PLA",
+          "LEVOTHYROXINE SODIUM 100UG/1 100 BOTTLE, PLASTIC IN 1 BOTTLE, PLASTIC / 100 TABLET IN 1 BOTTLE, PLA"
+        ],
+        "to": "LEVOTHYROXINE SODIUM 100UG/1 100 BOTTLE, PLASTIC IN 1 BOTTLE, PLASTIC / 100 TABLET BOTTLE, PLA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ASACOL HD 800MG/1 12 BOTTLE CASE / 180 TABLET, DELAYED RELEASE IN 1 BOTTLE",
+          "ASACOL HD 800MG/1 12 BOTTLE IN 1 CASE / 180 TABLET, DELAYED RELEASE IN 1 BOTTLE"
+        ],
+        "to": "ASACOL HD 800MG/1 12 BOTTLE CASE / 180 TABLET, DELAYED RELEASE IN 1 BOTTLE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DOXYCYCLINE HYCLATE 100MG/1 50 BOTTLE, PLASTIC IN 1 BOTTLE, PLASTIC / 50 CAPSULE BOTTLE, PLAST",
+          "DOXYCYCLINE HYCLATE 100MG/1 50 BOTTLE, PLASTIC IN 1 BOTTLE, PLASTIC / 50 CAPSULE IN 1 BOTTLE, PLAST"
+        ],
+        "to": "DOXYCYCLINE HYCLATE 100MG/1 50 BOTTLE, PLASTIC IN 1 BOTTLE, PLASTIC / 50 CAPSULE BOTTLE, PLAST"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MICROGESTIN FE 1-20 TABLET",
+          "MICROGESTIN FE 1/20 TABLET"
+        ],
+        "to": "MICROGESTIN FE 1-20 TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "RISPERIDONE 1 MG TABLET",
+          "RISPERIDONE TABLET 1 MG"
+        ],
+        "to": "RISPERIDONE 1 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ROPINIROLE HCL TABLET 4 MG",
+          "ROPINIROLE HCL 4 MG TABLET"
+        ],
+        "to": "ROPINIROLE HCL 4 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LEVOTHYROXINE SODIUM 200UG/1 100 BOTTLE, PLASTIC IN 1 BOTTLE, PLASTIC / 100 TABLET BOTTLE, PLA",
+          "LEVOTHYROXINE SODIUM 200UG/1 100 BOTTLE, PLASTIC IN 1 BOTTLE, PLASTIC / 100 TABLET IN 1 BOTTLE, PLA"
+        ],
+        "to": "LEVOTHYROXINE SODIUM 200UG/1 100 BOTTLE, PLASTIC IN 1 BOTTLE, PLASTIC / 100 TABLET BOTTLE, PLA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ROPINIROLE HCL TABLET 5 MG",
+          "ROPINIROLE HCL 5 MG TABLET"
+        ],
+        "to": "ROPINIROLE HCL 5 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NECON 0.5-35-28 TABLET",
+          "NECON 0.5/35-28 TABLET"
+        ],
+        "to": "NECON 0.5/35-28 TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "RISPERIDONE 3 MG TABLET",
+          "RISPERIDONE TABLET 3 MG"
+        ],
+        "to": "RISPERIDONE 3 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "RISPERIDONE 4 MG TABLET",
+          "RISPERIDONE TABLET 4 MG"
+        ],
+        "to": "RISPERIDONE 4 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LEVOTHYROXINE SODIUM 112UG/1 100 BOTTLE, PLASTIC IN 1 BOTTLE, PLASTIC / 100 TABLET BOTTLE, PLA",
+          "LEVOTHYROXINE SODIUM 112UG/1 100 BOTTLE, PLASTIC IN 1 BOTTLE, PLASTIC / 100 TABLET IN 1 BOTTLE, PLA"
+        ],
+        "to": "LEVOTHYROXINE SODIUM 112UG/1 100 BOTTLE, PLASTIC IN 1 BOTTLE, PLASTIC / 100 TABLET BOTTLE, PLA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ROPINIROLE HCL TABLET 2 MG",
+          "ROPINIROLE HCL 2 MG TABLET"
+        ],
+        "to": "ROPINIROLE HCL 2 MG TABLET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LEVOTHYROXINE SODIUM 88UG/1 100 BOTTLE, PLASTIC IN 1 BOTTLE, PLASTIC / 100 TABLET BOTTLE, PLAS",
+          "LEVOTHYROXINE SODIUM 88UG/1 100 BOTTLE, PLASTIC IN 1 BOTTLE, PLASTIC / 100 TABLET IN 1 BOTTLE, PLAS"
+        ],
+        "to": "LEVOTHYROXINE SODIUM 88UG/1 100 BOTTLE, PLASTIC IN 1 BOTTLE, PLASTIC / 100 TABLET BOTTLE, PLAS"
+      }
+    ]
+  }
+]
