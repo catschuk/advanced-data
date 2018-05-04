@@ -7,9 +7,9 @@
 
 - - -
 
-Imagine you’re Medicare patient in your mid-sixties with Type 1 diabetes. You were diagnosed as an adult, but prescription drugs have been part of your daily routine for the past 20 years. Every meal requires you to interact with a complex regimen of expensive drugs and technologies that you and your doctor have designed to best fit your needs. On top of that, you take a few other drugs for high cholesterol and high blood pressure — pretty normal for someone of late middle-age.  It’s a lot to keep track of, but your Medicare prescription drug plan helps you cover a lot of the cost.
+Imagine you’re Medicare patient in your mid-sixties with Type 1 diabetes. You were diagnosed as an adult, but prescription drugs have been part of your daily routine for the past 20 years. Every meal requires you to interact with a complex regimen of expensive drugs and technologies that you and your doctor have designed to best fit your needs. On top of that, take a few other drugs for high cholesterol and high blood pressure — pretty normal for someone of late middle-age.  It’s a lot to keep track of, but your Medicare prescription drug plan helps you cover a lot of the cost.
 
-Then one day, you walk up to the counter of your local pharmacy — the same place you’ve been buying your medications since you were first diagnosed — and the pharmacist tells you that your Medicare Part D plan list of covered drugs — called a drug formulary — has changed. The cost of your medication is going up, and your insulin won’t be covered at all, so you’ll have to switch to a different brand.
+Then one day, you walk up to the counter of your local pharmacy — the same place you’ve been buying your medications since you were first diagnosed — and the pharmacist tells you that your Medicare Part D plan list of covered drugs — called a drug formulary — has changed. The cost of your TK is going up, and your TK won’t be covered at all, so you’ll have to switch to a different brand.
 
 This is the situation my mom found herself in recently. When she told me, I wondered how common her experience was. How often do Medicare patients find themselves losing access to the drugs they rely on?
 
@@ -19,7 +19,7 @@ Finding a plan that covers all of your medications can be really difficult. Case
 
 “Plans can’t get rid of all diabetes medications,” said Schwarz. “But we see a lot of people who take a lot of different medications, and finding a plan that can cover all [their] meds is sometimes impossible.” Patients can always submit an appeal to their insurance company, but that can be tough for patients who are already managing a chronic illness.
 
-The problem is, no one outside the Centers for Medicare and Medicaid Services (CMS) is tracking how Medicare Part D plan formularies change over time, so there’s a lack of accountability. (The center makes its data available, but for a price — $250 for one month’s worth of data.)[1]
+The problem is, no one outside the Centers for Medicare and Medicaid Services (CMS) is tracking how Medicare Part D plans change over time, so there’s a lack of accountability. (The center makes its data available, but for a price — $250 for one month’s worth of data.)[1]
 
 This doesn’t mean Medicare plans can do whatever they want. There are some rules; they’re not allowed to stop covering drugs in the middle of the year without CMS approval, and, when they do make formulary changes, they’re required to give patients advanced notice.
 
@@ -29,21 +29,22 @@ But, the rules that govern Medicare drug plans could change soon. CMS recently p
 
 [1]I’ve gone back and forth with a CMS press officer about getting the fee waived, but he ultimately said that they couldn’t do it because “a serious amount of work needs to be done to make the data non-identifiable and to ensure it does not contain any protected health information or personally identifiable information.” (The data is described [here](https://www.cms.gov/Research-Statistics-Data-and-Systems/Files-for-Order/NonIdentifiableDataFiles/PrescriptionDrugPlanFormularyPharmacyNetworkandPricingInformationFiles.html).)
 
+[2]: I corresponded with several of their staff members, and they said that they get all of their data from Medicare. I’ve checked their current formulary data against the Medicare Plan Finder and it all checks out.
 
 -----------
 ###**The data**
 
 For this story, I created an original dataset in order to answer a central question: how do patients who don’t change Medicare drug plans fare over time?
 
-Current formulary information is available online through the [CMS Plan Finder](https://www.medicare.gov/find-a-plan/questions/home.aspx?AspxAutoDetectCookieSupport=1), and insurance companies post up-to-date formulary information on their websites. But, historic formulary data is much harder to find. (CMS charges $250 for just one month of data.) Since I wanted to track formulary changes over time, I had to get creative.
+Current formulary information is available online through the CMS Plan Finder, and insurance companies post up-to-date formulary information on their websites. But, historic formulary data is much harder to find. (CMS charges $250 for just one month of data.) Since I wanted to track formulary changes over time, I had to get creative.
 
-I found a website called [Q1Medicare](https://q1medicare.com/PartD-BrowseMedicare-2018PlanFormulary.php), which is operated by Q1Group, LLC and advertises itself as an educational tool.(I corresponded with several of their staff members, and they said that they get all of their data from Medicare.) The website allowed me to look up Medicare Part D formulary data by state and by plan, and I was able to manipulate the URL to get data for past years, as far back as 2013.
+I found a website called Q1Medicare, which is operated by Q1Group, LLC and advertises itself as an educational tool.[2] The website allowed me to look up Medicare Part D formulary data by state and by plan, and I was able to manipulate the URL to get data for past years, as far back as 2013.
 
-I decided to look at formulary data for one of California’s top enrolled Medicare plans — Humana. Using county-level [enrollment data](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/MCRAdvPartDEnrolData/Monthly-PDP-Enrollment-by-State-County-Contract.html?DLSort=1&DLEntries=10&DLPage=1&DLSortDir=descending) from CMS for January, 2018, I used used a pivot table to figure out which companies have the highest number of enrollees in California, and then calculated the cumulative percent using the formula **=SUM($B$2:B2)/2268036*100 **in Excel:
+I decided to look at formulary data for one of California’s top enrolled Medicare plans — Humana. Using county-level enrollment data from CMS for January, 2018, I used used a pivot table to figure out which companies have the highest number of enrollees in California, and then calculated the cumulative percent using the formula =SUM($B$2:B2)/2268036*100 in Excel:
 
 ![](https://s14.postimg.cc/b23701x7l/Screen_Shot_2018-05-01_at_8.19.25_PM.png)
 
-I found that, together, SilverScript and Humana cover almost 50 percent of Medicare patients in California. Q1Medicare had more complete data for Humana (it was missing SilverScript data for 2014 and 2015), so I decided to start with Humana’s cheapest plan —Humana Preferred Rx Plan (S5884-114-0). I also picked Humana because, in 2015, CMS imposed a civil money penalty of  $3 million against Humana for violating Medicare Part D formulary requirements, among other things. The [letter](https://www.cms.gov/Medicare/Compliance-and-Audits/Part-C-and-Part-D-Compliance-and-Audits/Downloads/Humana_CMP_12_29_2015.pdf) from CMS to Humana’s CEO, Bruce Broussard, accused Humana of policies that “resulted in Humana’s enrollees experiencing inappropriate denials of coverage at the point of sale.”
+I found that, together, SilverScript and Humana cover almost 50 percent of Medicare patients in California. Q1Medicare had more complete data for Humana (it was missing SilverScript data for 2014 and 2015), so I decided to start with Humana’s cheapest plan —Humana Preferred Rx Plan (S5884-114-0). I also picked Humana because, in 2015, CMS imposed a civil money penalty of  $3 million against Humana for violating Medicare Part D formulary requirements, among other things. The letter from CMS to Humana’s CEO Bruce Broussard accused Humana of policies that “resulted in Humana’s enrollees experiencing inappropriate denials of coverage at the point of sale.”
 
 Next, I needed to get the data from Q1Medicare's website into a usable format. This is how it appears on their website:
 
@@ -268,7 +269,7 @@ Here's the result:
 
 As you can see, my imaginary patient wouldn't have had much trouble with her cholesterol and blood pressure medications, Atorvastatin and Losartan. Both stayed pretty consistent over the five year period.
 
-But it's a different story when it comes to her diabetes medications. Humalog dropped off Humana's formulary in 2016 and Humulin moved up two tiers, making it more expensive. So, if my impaginary Medicare patient wanted to stay with Humana from 2013 to 2018, she would have had to switch insulin types, and quite possibly insulin delivery methods (not all insulins are compatable with every delivery system).
+But it's a different story when it comes to her diabetes medications. Humalog dropped off Humana's formulary in 2016 and Humulin moved up two tiers, making it more expensive. So, if my impaginary Medicare patient wanted to stay with Humana from 2013 to 2018, she would have had to switch insulin types, and quite possibly delivery methods (not all insulins are compatable with syringe delivery).
 
 -----------
 ###**Next steps**
